@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+    *{
+
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7em;
+    }
+
+    .clr{
+        clear:both;
+    }
+
+    a{
+        color:#333;
+        text-decoration:none;
+    }
+
+    h1, h2, h3{
+        padding-bottom:20px;
+    }
+
+    p{
+        margin:10px 0;
+    }
+
+    .container{
+
+        margin:auto;
+        max-width: 1100px;  
+        padding:0 10px;
+    }
+
+    #navbar{
+        background: #333;
+        color:#fff;
+        margin:auto;
+        overflow:auto;
+    }
+
+    #navbar a{
+        color:#fff;
+    }
+
+
+    #navbar h1{
+        float:left;
+        padding-top: 20px;
+    }
+
+    #navbar ul{
+        float:right;
+        list-style: none;
+    }
+
+    #navbar ul li{
+        float:left;
+    }
+
+    #navbar ul li a{
+        display:block;
+        padding:20px;
+        text-align: center;
+    }
+
+    #navbar ul li a:hover{
+        background: #444;
+        color: orange;
+    }
+
+    #navbar ul li a.current{
+        background: #444;
+        color: orange;
+    }
+
+    #showcase{
+        background: url("./image_resources/showcase.jpg") no-repeat center center/cover;
+        height:600px;
+    }
+
+    #showcase .showcase-content{
+        color:#fff;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    #showcase .showcase-content h1{
+        font-size: 40px;
+        line-height:1.2em;
+    }
+
+    .text-primary{
+        color:orange;
+    }
+
+    #showcase .showcase-content .lead{
+        font-size:18px;
+        padding-bottom: 20px;
+        line-height:1.5em;
+    }
+
+    #showcase .showcase-content a{
+        padding:20px;
+        text-align: center;
+        background:#444 ;
+        color:#fff;
+    }
+
+    #showcase .showcase-content a:hover{
+        background:hotpink;
+        color:black;
+    }
+
+    #home-info{
+        height:400px;
+    }
+
+    #home-info .section-image{
+        background:url('./image_resources/photo-1.jpg') no-repeat;
+        width:50%;
+        float:left;
+        min-height:100%;
+    }
+
+    #home-info .section-info{
+        float:right;
+        background: #333;
+        width:50%;
+        color:#fff;
+        height:100%;
+        text-align: center;
+        padding:50px 30px;
+        overflow: hidden;
+    }
+
+    #home-info .section-info a{
+        color:black;
+        background: #fff;
+        display:inline-block;
+        padding:10px;
+    }
+
+    #home-info .section-info a:hover{
+        color:#fff;
+        background: black;
+    }
+
+    .box{
+        float:left;
+        width:33.3%;
+        padding:10px;
+        text-align:center;
+    }
+
+    .box h3{
+        margin-top:10px;
+        margin-bottom: -10px;
+    }
+
+    .bg-primary{
+        background: #f7c08a;
+        color:black;
+    }
+
+    .bg-light{
+        background: #f4f4f4;
+        color:#333;
+    }
+
+    #main-footer{
+        text-align:center;
+        background: #444;
+        color:#fff;
+        padding:5px;
+    }
+
+    .clr{
+        clear:both;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class=container>
+                <h1 class="logo"><a href="index.html">HBT</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="signup.html">SignUp</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ea eos eaque est sit dicta!</p>
+                <a class="btn" href="about.html">About Our Hotel</a>
+                </div>
+            </div>
+
+        
+        </div>
+
+    </header>
+
+    <section id="home-info">
+            <div class="section-image"></div>
+
+            <div class="section-info">
+                <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deserunt ducimus laboriosam at aut doloremque.</p>
+                <a href="#">Know More</a>
+            </div>
+
+    </section>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, veritatis?</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, veritatis?</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Fitness Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, veritatis?</p>
+        </div>
+
+    </section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+
+        <p>Hotel BT &copy; 2020, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
